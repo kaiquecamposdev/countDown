@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+:root {
+    /*FONT*/
+    --font-poppins: 'Poppins', sans-serif;
+
+    /*COLOR*/
+    --black: #4d4c59;
+    --purple: #6c63ff;
+    --light-gray: #c8c8c8;
+    --text-color: #9c9ab6;
+
+}
+
+body, html {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+
+    height: 100vh;
+
+}
+.flex-box {
+
+     
+    background: white url(imgs/rocket.svg) no-repeat fixed right center;
+
+}
+.flex-box-timer {
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+.div-timer {
+
+    padding-bottom: 55px;
+    min-width: 800px;
+    text-align: center;
+    font-family: var(--font-poppins);
+
+}
+.div-timer h1.title-timer {
+
+    padding-bottom: 15px;
+    font: bold 2.6em var(--font-poppins);
+    color: var(--purple);
+
+}
+.div-timer p.timer {
+
+    min-width: 100%;
+    padding-bottom: 20px;
+    font: 400 4.3em var(--font-poppins);
+    color: var(--black);
+
+}
+.div-timer span {
+
+    width: 100%;
+    text-align: center;
+    display: block;
+
+}
+.div-timer input {
+
+    font: 500 .9em var(--font-poppins);
+    color: #fff;
+    background-color: var(--purple);
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 25px;
+    justify-content: center;
+
+}
+#animated-text {
+
+    font-size: 48px;
+    color: rgb(153, 0, 255);
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+    animation: pulse 2s ease-in-out infinite;
+
+  }
+  
+  @keyframes pulse {
+    0% {
+
+      transform: scale(1);
+
+    }
+    50% {
+
+      transform: scale(1.2);
+      color: orange;
+      text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.7);
+
+    }
+    100% {
+
+      transform: scale(1);
+      color: yellow;
+      text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+
+    }
+  }
+
+
