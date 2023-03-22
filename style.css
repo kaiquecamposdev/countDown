@@ -16,7 +16,10 @@ body, html {
 
     margin: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box;
+
+    font-size: 62.5%;
 
 }
 body {
@@ -26,60 +29,49 @@ body {
 }
 .flex-box {
 
+    height: 100vh;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
      
     background: white url(imgs/rocket.svg) no-repeat fixed right center;
 
 }
 .flex-box-timer {
 
-    height: 100%;
-    width: 100%;
+    width: 65%;
+
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
 
 }
 .div-timer {
 
-    padding-bottom: 55px;
-    min-width: 800px;
+    display: grid;
     text-align: center;
-    font-family: var(--font-poppins);
+
 
 }
-.div-timer h1.title-timer {
+.title-timer {
 
-    padding-bottom: 15px;
-    font: bold 2.6em var(--font-poppins);
-    color: var(--purple);
+    margin: 0;
 
-}
-.div-timer p.timer {
-
-    min-width: 100%;
-    padding-bottom: 20px;
-    font: 400 4.3em var(--font-poppins);
+    font: 500 4rem var(--font-poppins);
     color: var(--black);
 
 }
-.div-timer span {
+.timer {
 
-    width: 100%;
-    text-align: center;
-    display: block;
+    margin: 0;
+    padding-top: 3rem;
 
-}
-.div-timer input {
-
-    font: 500 .9em var(--font-poppins);
-    color: #fff;
-    background-color: var(--purple);
-    border: 0;
-    border-radius: 5px;
-    padding: 10px 25px;
-    justify-content: center;
+    font: 400 6rem var(--font-poppins);
+    color: var(--black);
 
 }
+
 #animated-text {
 
     font-size: 48px;
@@ -111,4 +103,102 @@ body {
     }
   }
 
+  @media (max-width: 1170px) {
+    
+    body {
 
+        backdrop-filter: blur(.5rem);
+
+    }
+    .flex-box {
+
+        height: 100vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: white url(imgs/rocket.svg) no-repeat fixed center center;
+
+    }
+    .flex-box-timer {
+
+        width: 100%;
+        background: #00000074;
+
+    }
+    .timer {
+
+        padding-top: 2rem;
+        padding-bottom: .8rem;
+
+    }
+    .title-timer {
+
+        padding-top: 1rem;
+
+    }
+    .title-timer, .timer {
+
+        color: #f4f3f3cf;
+
+    }
+    
+
+}
+
+@media (max-width: 510px) {
+
+    .timer {
+
+        padding-top: 2rem;
+        padding-bottom: .8rem;
+
+    }
+    .title-timer {
+
+        padding-top: 1rem;
+
+    }
+
+    .title-timer, .timer {
+
+        font: 500 3.8rem var(--font-poppins);
+        color: #f4f3f3cf;
+
+    }
+
+} 
+
+@media (max-width: 485px) {
+
+    h1.title-timer, p.timer {
+
+        font: 500 3.2rem var(--font-poppins);
+        color: #f4f3f3cf;
+
+    } 
+
+}
+
+@media (max-width: 408px) {
+
+    h1.title-timer, p.timer {
+
+        font: 500 2.5rem var(--font-poppins);
+        color: #f4f3f3cf;
+
+    } 
+
+}
+
+@media (max-width: 320px) {
+
+    h1.title-timer, p.timer {
+
+        font: 500 2.2rem var(--font-poppins);
+        color: #f4f3f3cf;
+
+    } 
+
+}

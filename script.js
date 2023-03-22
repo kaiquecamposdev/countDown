@@ -1,20 +1,19 @@
-let currentHoursInWeb = document.querySelector('p.timer');
-let buttonSubscribe = document.querySelector('input');
-let textCount = document.querySelector('h1');
+const currentHoursInWeb = document.querySelector('.timer');
+const currentHoursInTitle = document.title;
+const buttonSubscribe = document.querySelector('input');
+const textCount = document.querySelector('h1');
 
 const date = new Date();
 
-let currentYear = date.getFullYear();
-let currentMonth = date.getMonth();
-let currentDay = date.getDate();
-let currentHours = date.getHours();
-let currentMinutes = date.getMinutes();
-let currentSeconds = date.getSeconds();
+const currentYear = date.getFullYear();
+const currentMonth = date.getMonth();
+const currentDay = date.getDate();
 
-let currentDate = new Date(currentYear, currentMonth, currentDay);
 
-let firstDay =  new Date(currentYear, currentMonth, 1);
-let lastDay = new Date(currentYear, currentMonth + 1, 0);
+const currentDate = new Date(currentYear, currentMonth, currentDay);
+
+const firstDay =  new Date(currentYear, currentMonth, 1);
+const lastDay = new Date(currentYear, currentMonth + 1, 0);
 
 let diff;
 let miliseconds;
@@ -48,20 +47,28 @@ if(currentDate.getDay() == 5) {
 
 }
 
-let timer = setInterval(() => {
+function atualizarOTempoAteSextaFeira() {
 
-    diff -= 1000;
+    const timer = setInterval(() => {
 
-    let days = Math.floor(diff / (1000 * 60 * 60 * 24) % lastDay.getDate());
-    let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-    let seconds = Math.floor((diff % (1000 * 60)) / 1000);
+        diff -= 1000;
+    
+        let days = Math.floor(diff / (1000 * 60 * 60 * 24) % lastDay.getDate());
+        let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((diff % (1000 * 60)) / 1000);
+    
+        let remainingDays = days.toString().padStart(2, '0');
+        let remainingHours = hours.toString().padStart(2, '0');
+        let remainingMinutes = minutes.toString().padStart(2, '0');
+        let remainingSeconds = seconds.toString().padStart(2, '0');
+    
+        currentHoursInWeb.textContent = `${remainingDays} : ${remainingHours} : ${remainingMinutes} : ${remainingSeconds}`;
 
-    let remainingDays = days.toString().padStart(2, '0');
-    let remainingHours = hours.toString().padStart(2, '0');
-    let remainingMinutes = minutes.toString().padStart(2, '0');
-    let remainingSeconds = seconds.toString().padStart(2, '0');
+        document.title = `${remainingDays}:${remainingHours}:${remainingMinutes}:${remainingSeconds}`;
 
-    currentHoursInWeb.textContent = `${remainingDays} : ${remainingHours} : ${remainingMinutes} : ${remainingSeconds}`;
+    }, 1000)
+    
 
-}, 1000)
+}
+atualizarOTempoAteSextaFeira()
