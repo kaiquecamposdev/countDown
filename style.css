@@ -24,85 +24,92 @@ body, html {
 }
 body {
 
+    background: #fff url(imgs/rocket.svg) no-repeat right fixed;
+
     height: 100vh;
 
 }
-.flex-box {
+.top-image img {
 
-    height: 100vh;
-
-    display: flex;
-    justify-content: start;
-    align-items: center;
-     
-    background: white url(imgs/rocket.svg) no-repeat fixed right center;
+    height: 100%;
+    width: 100%;
 
 }
 .flex-box-timer {
 
-    width: 65%;
+    width: 100%;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
 }
 .div-timer {
 
+    padding-left: 5%;
+
     display: grid;
     text-align: center;
 
-
 }
-.title-timer {
+.div-timer > h1 {
 
     margin: 0;
+    padding-bottom: 2rem;
 
-    font: 500 4rem var(--font-poppins);
-    color: var(--black);
+    font: 700 3.6rem var(--font-poppins);
+    text-transform: uppercase;
+    color: var(--purple);
 
 }
-.timer {
+.div-timer-div {
+
+    padding-bottom: 1.5rem;
+
+}
+.div-timer.div > span {
+
+    font: 400 1.4rem var(--font-poppins);
+    color: var(--text-color);
+
+    display: grid;
+    grid: 1fr 1fr 1fr 1fr;
+
+}
+.div-timer-div > p {
 
     margin: 0;
-    padding-top: 3rem;
 
     font: 400 6rem var(--font-poppins);
     color: var(--black);
 
 }
+.div-timer > p {
 
-#animated-text {
+    margin: 0;
+    padding-bottom: 2.5rem;
 
-    font-size: 48px;
-    color: rgb(153, 0, 255);
-    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
-    animation: pulse 2s ease-in-out infinite;
+    font: 400 1.4rem var(--font-poppins);
+    color: #9c9ab6;
 
-  }
-  
-  @keyframes pulse {
-    0% {
+}
+span.button > button {
 
-      transform: scale(1);
+    padding: 1rem 3rem;
+    border: 0;
+    border-radius: 1rem;
 
-    }
-    50% {
+    font: 400 1.6rem var(--font-poppins);
+    color: #fff;
+    background: var(--purple);
 
-      transform: scale(1.2);
-      color: orange;
-      text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.7);
+}
+.bottom-image img {
 
-    }
-    100% {
+    height: 100%;
+    width: 100%;
 
-      transform: scale(1);
-      color: yellow;
-      text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
-
-    }
-  }
-
+}
   @media (max-width: 1170px) {
     
     body {
@@ -117,9 +124,6 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-
-        background: white url(imgs/rocket.svg) no-repeat fixed center center;
-
     }
     .flex-box-timer {
 

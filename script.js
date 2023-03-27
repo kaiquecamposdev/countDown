@@ -1,4 +1,4 @@
-const currentHoursInWeb = document.querySelector('.timer');
+const currentHoursInWeb = document.querySelector('#timer');
 const currentHoursInTitle = document.title;
 const buttonSubscribe = document.querySelector('input');
 const textCount = document.querySelector('h1');
@@ -30,14 +30,7 @@ else if (date.getDay() === 0) {
 }
 if(currentDate.getDay() == 5) {
 
-    setTimeout(() => {
-
-        currentHoursInWeb.innerHTML = 'TGIF BRO!!';
-        currentHoursInWeb.setAttribute("id", "animated-text");
-        textCount.style.display = 'none';
-        buttonSubscribe.style.display = 'none';
-
-    }, 1000)
+    atualizarOTempoAteSextaFeira();
 
 }else {
     // calcula a diferença até a proxima sexta-feira
@@ -71,4 +64,6 @@ function atualizarOTempoAteSextaFeira() {
     
 
 }
-atualizarOTempoAteSextaFeira()
+// atualizarOTempoAteSextaFeira()
+
+currentHoursInWeb.textContent = `00 : 00 : 00 : 00`;
