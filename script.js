@@ -1,5 +1,7 @@
-const currentHoursInWeb = document.querySelector('#timer');
-const currentHoursInTitle = document.title;
+const daysInWeb = document.querySelector('.days')
+const hoursInWeb = document.querySelector('.hours')
+const minutesInWeb = document.querySelector('.minutes')
+const secondsInWeb = document.querySelector('.seconds') 
 const buttonSubscribe = document.querySelector('input');
 const textCount = document.querySelector('h1');
 
@@ -56,14 +58,14 @@ function atualizarOTempoAteSextaFeira() {
         let remainingMinutes = minutes.toString().padStart(2, '0');
         let remainingSeconds = seconds.toString().padStart(2, '0');
     
-        currentHoursInWeb.textContent = `${remainingDays} : ${remainingHours} : ${remainingMinutes} : ${remainingSeconds}`;
+        daysInWeb.textContent = remainingDays 
+        hoursInWeb.textContent = remainingHours 
+        minutesInWeb.textContent = remainingMinutes 
+        secondsInWeb.textContent = remainingSeconds
 
         document.title = `${remainingDays}:${remainingHours}:${remainingMinutes}:${remainingSeconds}`;
 
     }, 1000)
-    
 
 }
-// atualizarOTempoAteSextaFeira()
-
-currentHoursInWeb.textContent = `00 : 00 : 00 : 00`;
+ atualizarOTempoAteSextaFeira();

@@ -11,39 +11,53 @@
 
 </head>
     <body>
-    
-        <header class="top-image">
-            <img src="imgs/top-image.svg" alt="Top-image">
-        </header>
-        <main class="flex-box-timer">
-            <div class="div-timer">
+        <div class="container">
 
-                <h1>Ready to launch in...</h1>
+            <img src="imgs/top-image.svg" alt="">
 
-                <div class="div-timer-div">
+            <div class="countdown">
 
-                    <span>Dias</span>
-                    <span>Horas</span>
-                    <span>Minutos</span>
-                    <span>Segundos</span>
-                    <p id="timer"></p>
+                <header>
+
+                    <h1>Ready to launch in...</h1>
+
+                </header>
+
+                <div class="countdownTime">
+
+                    <div class="countdownItem">
+                        <p class="countdownText">Days</p>
+                        <p class="days" id="number">00</p>
+                    </div>
+                    <div class="countdownItem">
+                        <p class="countdownText">Hours</p>
+                        <p class="hours" id="number">00</p>
+                    </div>
+                    <div class="countdownItem">
+                        <p class="countdownText">Minutes</p>
+                        <p class="minutes" id="number">00</p>
+                    </div>
+                    <div class="countdownItem">
+                        <p class="countdownText">Seconds</p>
+                        <p class="seconds" id="number">00</p>
+                    </div>
 
                 </div>
-                
+                 
+                <footer>
 
-                <p>
-                    Inscreva-se para saber mais sobre o lançamento
-                </p>
-
-                <span class="button">
+                    <p>Inscreva-se para saber mais sobre o lançamento</p>
                     <button>Inscreva-se</button>
-                </span>
+
+                </footer> 
 
             </div>
-        </main>
-        <footer class="bottom-image">
-            <img src="imgs/bottom-image.svg" alt="Bottom-image">
-        </footer>
+            <div class="rocketImage">
+                <img src="imgs/rocket.svg" alt="">
+            </div>
 
+            <img src="imgs/bottom-image.svg" alt="">
+
+        </div>
     </body>
 </html>
