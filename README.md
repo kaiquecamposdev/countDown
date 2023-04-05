@@ -22,7 +22,7 @@
 
 ### To Acess
 
-[Github.io](https://kaiquecamposdev.github.io/countDown/)
+* [Github.io](https://kaiquecamposdev.github.io/countDown/)
 
 <hr>
 <p align="center">Thank you for attention <3</p>
