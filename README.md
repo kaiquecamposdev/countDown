@@ -1,10 +1,10 @@
 <h1 align="center">countDown</h1>
 
-## Pc version
+## PC Version
 
 <img src="imgs/windowPc.png">
 
-## Mobile version
+## Mobile Version
 
 <div align="center">
   <img src="imgs/windowMobile.png">
@@ -20,7 +20,7 @@
 
 - DOM 
 
-### To acess
+### To Acess
 
 [Github.io](https://kaiquecamposdev.github.io/countDown/)
 
