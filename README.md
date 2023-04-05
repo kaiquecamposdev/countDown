@@ -6,7 +6,9 @@
 
 ## Version Mobile
 
-<img src="imgs/windowMobile.png">
+<div align="center">
+  <img src="imgs/windowMobile.png">
+</div>
 
 ### Technologies
 
