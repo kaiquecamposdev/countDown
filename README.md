@@ -3,11 +3,11 @@
 
 ## Version PC
 
-<img src="../imgs/windowPc.png">
+<img src="countDown/imgs/windowPc.png">
 
 ## Version Mobile
 
-<img src="../imgs/windowMobile.png">
+<img src="countDown/imgs/windowMobile.png">
 
 ### Technologies
 
