@@ -20,7 +20,7 @@
 
 - DOM 
 
-### Acess
+### To acess
 
 [Github.io](https://kaiquecamposdev.github.io/countDown/)
 
