@@ -1,10 +1,10 @@
 <h1 align="center">countDown</h1>
 
-## Version PC
+## Pc version
 
 <img src="imgs/windowPc.png">
 
-## Version Mobile
+## Mobile version
 
 <div align="center">
   <img src="imgs/windowMobile.png">
