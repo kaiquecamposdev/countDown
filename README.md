@@ -1,5 +1,4 @@
-# countDown
-<hr>
+<h1 align="center">countDown</h1>
 
 ## Version PC
 
@@ -20,6 +19,6 @@
 - DOM 
 
 <hr>
-Thank you for attention !
+<p align="center">Thank you for attention <3</p>
 <hr>
 
