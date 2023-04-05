@@ -3,11 +3,11 @@
 
 ## Version PC
 
-<img src="countDown/imgs/windowPc.png">
+<img src="../imgs/windowPc.png">
 
 ## Version Mobile
 
-<img src="countDown/imgs/windowMobile.png">
+<img src="../imgs/windowMobile.png">
 
 ### Technologies
 
@@ -20,6 +20,6 @@
 - DOM 
 
 <hr>
-Thank you for attetion !
+Thank you for attention !
 <hr>
 
