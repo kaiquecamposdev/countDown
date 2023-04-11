@@ -1,14 +1,6 @@
 <h1 align="center">countDown</h1>
-<style>
 
- .center {
-  display: flex;
-  justify-content: center;
-}
-  
-</style>
-
-<div class="center">
+<div align="center">
 
 [PC Version](#pc-version) | [Mobile Version](#mobile-version) | [Techs](#techs) | [Libraries](#libraries) | [To Access](https://kaiquecamposdev.github.io/countDown/)
 
